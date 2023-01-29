@@ -7,6 +7,10 @@ body {
 .hide {
   display: none !important;
 }
+
+#img-hamburger, #img-search, #list-menu-nav > li > a, .btn-cta, .list-footer-links > li > a {
+  cursor: pointer;
+}
 /* Header */
 header {
   width: 100%;
@@ -67,7 +71,7 @@ form > label {
   height: 24px;
   position: absolute;
   top: 0;
-  left: .5rem;
+  left: .75rem;
 }
 
 #input-search {
@@ -81,10 +85,14 @@ form > label {
   color: hsl(0, 0%, 0%);
 }
 
-#input-search:focus{
+#input-search:focus {
   outline: none;
   background-color: hsl(0, 0%, 100%);
   border-color: hsl(274, 63%, 84%);
+}
+
+#input-search:focus + #img-search > g > path {
+  fill: hsl(274, 63%, 84%);
 }
 
 #link-sign-in {
@@ -93,6 +101,16 @@ form > label {
   border: 2px solid hsl(0, 0%, 0%);
   border-radius: 4px;
   font-weight: 600;
+}
+
+#link-sign-in:hover {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
+
+.btn-cta:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 0%);
 }
 
 /* Main */
@@ -186,5 +204,6 @@ footer > h2 {
   font-size: 1.15rem;
 }
 
-
-
+.list-footer-links > li > a:hover {
+  color: hsl(274, 63%, 84%);
+}
