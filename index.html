@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <script type="text/javascript" src="./js/headerMenu.js"></script>
+  <title>Spense || Landing Page</title>
+  <!-- Mobile View: 414px x 2032px -->
+  <!-- Tablet View: 768px x 1984px -->
+  <!-- Desktop View: 1440px x 1566px -->
+</head>
+<body>
+  <header>
+    <h1>
+      <img id="header-logo" src="./Assets/Logo.svg" alt="Snippet Logo"/>
+    </h1>
+    <nav>
+      <img id="img-hamburger" src="./Assets/Hamburger Menu.svg" alt="Hamburger Icon for Menu control"/>
+      <ul id="list-menu-nav" class="hide">
+        <li>
+          <form id="form-search">
+            <label>
+              <img id="img-search" src="./Assets/Search Icon.svg" alt="Search Icon"/>
+              <input id="input-search" type="text" placeholder="Search Snippets..."/>
+            </label>
+          </form>
+        </li>
+        <li><a href="#signIn" id="link-sign-in">Sign In</a></li>
+        <li><a href="#signUp" class="btn-cta"><b>Get Started</b> - it's free</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="div-hero">
+      <div>
+        <h2>Gorgeous Code Snippets</h2>
+        <div>With Snipper, create fully customizable code snippets in a matter of seconds right from your browser.</div>
+        <button class="btn-cta"><b>Get Started</b> - it's free</button>
+        <span>No credit card required.</span>
+      </div>
+      <img id="img-hero" src="./Assets/Snippet Image.png" alt="Image of a code snippet on VS Code."/>
+    </div>
+    <div class="div-features">
+      <img id="img-snippet-editor" src="./Assets/Customizable Image.png" alt="Image of a snippet of code with color changing feature"/>
+      <div>
+        <h3>A fully customizable code snippet editor</h3>
+        <div>Fully customize the color scheme of your code snippet, or use our own premade color schemes. Export your code snippets in JPG, PDF, PNG, or any of the other 10+ common extensions.</div>
+        <button class="btn-cta"><b>Get Started</b> - it's free</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <h2>
+      <img id="footer-logo" src="./Assets/Logo.svg" alt="Snippet Logo"/>
+    </h2>
+    <div class="div-footer-links">
+      <ul class="list-footer-links">
+        <li><a href="#terms">Terms and Conditions</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
